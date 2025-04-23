@@ -3081,24 +3081,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/mustafaerdogan/.nuget/packages/": {}
+    "C:\\Users\\musta\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mustafaerdogan/KlarityMVP/KlarityMVP.csproj",
+      "projectUniqueName": "C:\\Users\\musta\\OneDrive\\Desktop\\WebApp\\KlarityMVP\\KlarityMVP.csproj",
       "projectName": "KlarityMVP",
-      "projectPath": "/Users/mustafaerdogan/KlarityMVP/KlarityMVP.csproj",
-      "packagesPath": "/Users/mustafaerdogan/.nuget/packages/",
-      "outputPath": "/Users/mustafaerdogan/KlarityMVP/obj/",
+      "projectPath": "C:\\Users\\musta\\OneDrive\\Desktop\\WebApp\\KlarityMVP\\KlarityMVP.csproj",
+      "packagesPath": "C:\\Users\\musta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\musta\\OneDrive\\Desktop\\WebApp\\KlarityMVP\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/mustafaerdogan/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\musta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3161,7 +3168,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

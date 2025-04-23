@@ -1,0 +1,33 @@
+﻿@model KlarityMVP.Models.CheckoutViewModel
+
+@{
+    ViewData["Title"] = "Checkout";
+    Layout = "_Layout";
+}
+
+<section class="py-5 bg-black text-white">
+    <div class="container" style="max-width:600px;">
+        <h2 class="mb-4 text-center">Checkout</h2>
+        <p class="text-center">Your total is: <strong>$@Model.OrderTotal.ToString("F2")</strong></p>
+
+        <form asp-action="Index" method="post">
+            @Html.AntiForgeryToken()
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input asp-for="Email" type="email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Shipping Address</label>
+                <textarea asp-for="Address" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-light text-dark w-100">Place Order</button>
+        </form>
+    </div>
+</section>

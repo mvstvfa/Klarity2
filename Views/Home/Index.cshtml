@@ -1,43 +1,74 @@
 ﻿@{
     ViewData["Title"] = "Home";
+    Layout = "_Layout";
 }
 
-<section class="hero">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6 text-md-start">
-        <h1>CLEAN ENERGY.<br/>CLEAR FOCUS.</h1>
-        <a href="/products" class="btn btn-primary mt-4 px-4 py-2">SHOP NOW</a>
-      </div>
-      <div class="col-md-6">
-        <img src="https://i.imgur.com/dFezXzb.png" alt="Klarity Cans" class="img-fluid" />
-      </div>
+<!-- HERO (GRAY) -->
+<section class="py-5" style="background-color: #181b1f;">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <div class="text-center text-md-start mb-5 mb-md-0">
+            <h1 class="display-4 fw-bold text-white">CLEAN ENERGY.<br />CLEAR FOCUS.</h1>
+            <a href="/Home/Products" class="btn btn-light btn-lg rounded-pill mt-4 px-5 text-dark">
+                Shop Now
+            </a>
+        </div>
+        <img src="~/images/drink.png" alt="Klarity Cans" class="img-fluid" style="max-height:650px;">
     </div>
-  </div>
 </section>
 
-<section class="mission text-center">
-  <div class="container">
-    <h2>Our Mission</h2>
-    <p>At Klarity, we are dedicated to providing clean energy solutions that support your wellness and mental clarity.</p>
-  </div>
+<!-- MISSION (BLACK) -->
+<section class="py-5 bg-black text-white text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-3"><i class="bi bi-heart-fill text-danger me-2"></i>Our Mission</h2>
+        <p class="lead">
+            We provide clean, crash-free energy drinks that support your clarity, focus, and performance.
+        </p>
+    </div>
 </section>
 
-<section class="testimonials text-center">
-  <div class="container">
-    <h2>Testimonials</h2>
-    <blockquote class="p-4 bg-light rounded">
-      “Klarity has <strong>been</strong> a game-changer for my productivity! It really helps me stay focused throughout the day.”<br/><br/>– Sarah
-    </blockquote>
-  </div>
+<!-- TESTIMONIALS (GRAY) -->
+<section class="py-5" style="background-color: #181b1f;">
+    <div class="container text-center">
+        <h2 class="fw-bold text-white mb-4">Testimonials</h2>
+        <div class="bg-dark text-white p-4 rounded shadow mx-auto" style="max-width:700px;">
+            “Klarity has <strong>been</strong> a game-changer for my productivity!
+            It really helps me stay focused throughout the day.”<br />
+            <small class="text-muted">– Sarah</small>
+        </div>
+    </div>
 </section>
 
-<section class="benefits text-center">
-  <div class="container">
-    <h2>Benefits</h2>
-    <div class="row mt-4">
-      <div class="col-md-4">
-        <div class="icon-section">
-          <img src="https://cdn-icons-png.flaticon.com/512/1686/1686192.png" alt="No Crash"/>
-          <h5>No Crash</h5>
-          <
+<!-- BENEFITS (BLACK) -->
+<section class="py-5 bg-black text-white text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-5">Benefits</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <i class="bi bi-lightning-fill fs-1 text-warning mb-3"></i>
+                <h5>Clean Energy</h5>
+                <p>Long-lasting energy without the crash or jitters</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-eye fs-1 text-info mb-3"></i>
+                <h5>Cognitive Clarity</h5>
+                <p>Enhance focus, memory, and mental performance</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-droplet-half fs-1 text-primary mb-3"></i>
+                <h5>Hydration Support</h5>
+                <p>Infused with electrolytes to support wellness</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA FOOTER (GRAY) -->
+<section class="py-5 text-center" style="background-color: #181b1f; color:white;">
+    <div class="container">
+        <h3 class="fw-bold mb-2">Ready to feel Klarity?</h3>
+        <p class="lead">Fuel your focus. Feel your power. Drink Klarity today.</p>
+        <a href="/Home/Products" class="btn btn-light rounded-pill px-4 py-2 text-dark">
+            Shop Now
+        </a>
+    </div>
+</section>

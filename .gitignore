@@ -1,0 +1,8 @@
+﻿# Build folders
+bin/
+obj/
+
+# VS settings
+.vs/
+*.suo
+*.user

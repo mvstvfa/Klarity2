@@ -1,0 +1,71 @@
+@{
+    ViewData["Title"] = "Shop Klarity";
+    Layout = "_Layout";
+}
+
+<section class="py-5 text-white bg-black text-center">
+    <div class="container">
+        <h1 class="display-5 fw-bold">Shop Klarity</h1>
+        <p class="lead text-light">Pick your fuel. Power your focus.</p>
+    </div>
+</section>
+
+<section class="py-5" style="background-color: #181b1f; color:white;">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-5 justify-content-center">
+
+            <!-- Regular Pack -->
+            <div class="col">
+                <div class="card bg-dark text-white h-100 shadow border-0">
+                    <img src="~/images/regular .png"
+                         class="card-img-top mx-auto mt-4"
+                         alt="Klarity Regular"
+                         style="width:200px; object-fit:contain;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Klarity Original Pack</h5>
+                        <p class="card-text">$9.99 / 3-pack</p>
+                        <form asp-controller="Cart" asp-action="Add" method="post">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="name" value="Klarity Original Pack" />
+                            <input type="hidden" name="price" value="9.99" />
+                            <button type="submit" class="btn btn-light text-dark rounded-pill px-4">
+                                Add to Cart
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plus Pack -->
+            <div class="col">
+                <div class="card bg-dark text-white h-100 shadow border-0">
+                    <img src="~/images/plus.png"
+                         class="card-img-top mx-auto mt-4"
+                         alt="Klarity+ Black Label"
+                         style="width:200px; object-fit:contain;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Klarity+ Black Label</h5>
+                        <p class="card-text">$10.99 / 3-pack</p>
+                        <form asp-controller="Cart" asp-action="Add" method="post">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="name" value="Klarity+ Black Label" />
+                            <input type="hidden" name="price" value="10.99" />
+                            <button type="submit" class="btn btn-light text-dark rounded-pill px-4">
+                                Add to Cart
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-5 text-white bg-black text-center">
+    <div class="container">
+        <a href="/Cart" class="btn btn-light text-dark rounded-pill px-4 py-2">
+            Go to Cart
+        </a>
+    </div>
+</section>
