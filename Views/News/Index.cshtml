@@ -1,0 +1,94 @@
+﻿@model KlarityMVP.Models.News
+
+@{
+    ViewData["Title"] = "Klarity News";
+}
+
+<!-- Dark Theme News Page -->
+<section class="bg-dark text-white py-5">
+    <div class="container text-center">
+        <img src="/images/powder.png" alt="Klarity Powder" class="img-fluid mb-4" style="max-width:280px;">
+        <h1 class="display-4 fw-bold">New On-The-Go Stick Pack</h1>
+        <p class="lead text-secondary">Launching Summer 2025</p>
+    </div>
+</section>
+
+<!-- Powder Details -->
+<section class="bg-black text-white py-5">
+    <div class="container text-center">
+        <h3 class="mb-4">Why You'll Love Klarity Powders</h3>
+
+        <div class="row justify-content-center my-4">
+            <div class="col-md-3 mb-3">
+                <div class="p-3 border rounded border-secondary">
+                    <i class="bi bi-lightning-charge fs-1 text-success"></i>
+                    <h5 class="mt-2">Instant Energy</h5>
+                    <p class="text-muted small">Feel revitalized and energized instantly, anytime, anywhere.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="p-3 border rounded border-secondary">
+                    <i class="bi bi-droplet-half fs-1 text-info"></i>
+                    <h5 class="mt-2">Easy Hydration</h5>
+                    <p class="text-muted small">Conveniently mix with water for quick hydration on-the-go.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="p-3 border rounded border-secondary">
+                    <i class="bi bi-capsule fs-1 text-warning"></i>
+                    <h5 class="mt-2">Powerful Nutrients</h5>
+                    <p class="text-muted small">Packed with essential vitamins to boost your daily wellness.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-secondary">
+
+        <h3 class="mb-4">Stay Updated</h3>
+        <p class="mb-4">Subscribe to our newsletter and never miss a product drop.</p>
+        <form asp-action="Subscribe" method="post" class="row justify-content-center">
+            <div class="col-md-4">
+                <input type="email" name="email" placeholder="you@example.com"
+                       class="form-control bg-dark text-white border-0" required>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-outline-light">Subscribe</button>
+            </div>
+        </form>
+
+        @if (TempData["Subscribed"] != null)
+        {
+            <div class="alert alert-success mt-4" role="alert">
+                @TempData["Subscribed"]
+            </div>
+        }
+    </div>
+</section>
+
+<style>
+    body {
+        background-color: #121212;
+        color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .form-control:focus {
+        background-color: #000;
+        color: #fff;
+        box-shadow: none;
+        border-color: #555;
+    }
+
+    ::placeholder {
+        color: #aaa !important;
+    }
+
+    /* Fix card text visibility */
+    .p-3.border.rounded p {
+        color: #ffffff !important;
+    }
+</style>
+
+
+<!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />

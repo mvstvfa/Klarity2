@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KlarityMVP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da5d42d7d02d655a69e42150df1170c68dba6b5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82380d181d0cfe65d92bdec8a4982533f277017b")]
 [assembly: System.Reflection.AssemblyProductAttribute("KlarityMVP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KlarityMVP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

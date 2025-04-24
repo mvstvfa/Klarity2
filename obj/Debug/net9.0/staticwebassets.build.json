@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SrwrXqOYh0Or6tV+8t9l6Nh5zIk3NcFdY7oVu16O6oM=",
+  "Hash": "vWenI0mDmPrS41wPOUsPUTrqvvfrSyAUl7FY834b2BM=",
   "Source": "KlarityMVP",
   "BasePath": "_content/KlarityMVP",
   "Mode": "Default",
@@ -1506,6 +1506,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\plus.png"
+    },
+    {
+      "Identity": "C:\\Users\\musta\\OneDrive\\Desktop\\WebApp\\KlarityMVP\\wwwroot\\images\\powder.png",
+      "SourceId": "KlarityMVP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\musta\\OneDrive\\Desktop\\WebApp\\KlarityMVP\\wwwroot\\",
+      "BasePath": "_content/KlarityMVP",
+      "RelativePath": "images/powder#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tmzwys1439",
+      "Integrity": "myH4vdStRz+g5CcJNRU+TJihkyHnIQMHrB/UhmgQpwQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\powder.png"
     },
     {
       "Identity": "C:\\Users\\musta\\OneDrive\\Desktop\\WebApp\\KlarityMVP\\wwwroot\\images\\regular .png",
@@ -3650,6 +3671,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-TqkPVepq2GOXQKDvqaDXKI9MD5DpO2CSypG6BLwPfUw="
+        }
+      ]
+    },
+    {
+      "Route": "images/powder.png",
+      "AssetFile": "C:\\Users\\musta\\OneDrive\\Desktop\\WebApp\\KlarityMVP\\wwwroot\\images\\powder.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1713384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"myH4vdStRz+g5CcJNRU+TJihkyHnIQMHrB/UhmgQpwQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 06:48:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-myH4vdStRz+g5CcJNRU+TJihkyHnIQMHrB/UhmgQpwQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/powder.tmzwys1439.png",
+      "AssetFile": "C:\\Users\\musta\\OneDrive\\Desktop\\WebApp\\KlarityMVP\\wwwroot\\images\\powder.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1713384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"myH4vdStRz+g5CcJNRU+TJihkyHnIQMHrB/UhmgQpwQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Apr 2025 06:48:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tmzwys1439"
+        },
+        {
+          "Name": "label",
+          "Value": "images/powder.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-myH4vdStRz+g5CcJNRU+TJihkyHnIQMHrB/UhmgQpwQ="
         }
       ]
     },
