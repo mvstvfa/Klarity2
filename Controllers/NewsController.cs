@@ -6,10 +6,10 @@ namespace KlarityMVP.Controllers
 {
     public class NewsController : Controller
     {
-        // GET: /News
+        
         public IActionResult Index()
         {
-            // Only one item now
+            
             var item = new News
             {
                 Name = "Focus Blend",

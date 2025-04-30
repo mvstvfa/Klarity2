@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Order Tracking";
+    Layout = "_Layout";
+}
+
+<section class="min-vh-100 bg-black text-white d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold text-white">Track Your Order</h1>
+        <p class="lead text-white-50">Enter your order number to check the status.</p>
+
+        <form method="post" class="mt-4" style="max-width: 500px; margin: auto;">
+            <div class="input-group">
+                <input type="text" name="orderNumber" class="form-control form-control-lg bg-dark text-white border-light" placeholder="Order Number" required />
+                <button class="btn btn-outline-light btn-lg" type="submit">Track</button>
+            </div>
+        </form>
+
+        @if (ViewBag.Status != null)
+        {
+            <div class="mt-5">
+                <h4 class="text-success">Tracking for Order: <strong>@ViewBag.OrderNumber</strong></h4>
+                <p class="fs-5 mt-2">@ViewBag.Status</p>
+            </div>
+        }
+
+        <p class="mt-4 text-white-50">Note: Tracking updates may take 24 hours after shipping.</p>
+    </div>
+</section>

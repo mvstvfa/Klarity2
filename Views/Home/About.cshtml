@@ -1,5 +1,55 @@
-@{
-    ViewData["Title"] = "About";
+﻿@{
+    ViewData["Title"] = "About Klarity";
+    Layout = "_Layout";
 }
-<h1>About</h1>
-<p>Put your About page content here.</p>
+
+<section class="py-5" style="background-color: #1f2225; color: white;">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-2">About Klarity</h1>
+        <p class="lead text-secondary">Driven by clarity, powered by purpose.</p>
+    </div>
+</section>
+
+<section class="py-5 bg-black text-white">
+    <div class="container">
+        <h2 class="fw-bold mb-4">Our Mission</h2>
+        <p class="fs-5">
+            At Klarity, we believe wellness shouldn't be complicated. That’s why our mission is simple: deliver clean, effective, and transparent products that help people
+            stay sharp, energized, and hydrated—wherever life takes them. Whether you're grinding at your desk, hitting the gym, or simply trying to make it through the day,
+            Klarity is your go-to support system.
+        </p>
+        <p class="fs-5">
+            We’re here to simplify your wellness routine—no gimmicks, no fluff. Just science-backed ingredients, refreshingly real results, and formulas you can trust.
+        </p>
+
+        <h2 class="fw-bold mt-5 mb-4">Meet the Founder</h2>
+        <div class="d-md-flex align-items-start gap-4">
+            <div class="fs-1 text-white bg-secondary rounded-circle p-4 shadow" style="width: 100px; height: 100px; display: flex; justify-content: center; align-items: center;">
+                <i class="bi bi-person-circle"></i>
+            </div>
+            <div>
+                <h4 class="text-info">Mustafa Erdogan – CEO & Founder</h4>
+                <p>
+                    Klarity was built from the ground up by Mustafa Erdogan—a one-man army running every aspect of the business.
+                    With a strong passion for mental clarity and personal wellness, Mustafa created Klarity to provide high-quality supplements that make a real difference.
+                </p>
+                <p>
+                    As a developer, designer, and entrepreneur, he crafted the entire Klarity experience from product to platform. His commitment to quality, simplicity,
+                    and innovation is what drives Klarity forward.
+                </p>
+            </div>
+        </div>
+
+        <h2 class="fw-bold mt-5 mb-4">Why Klarity?</h2>
+        <ul class="fs-5">
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Clean, crash-free energy</li>
+            <li><i class="bi bi-lightning-charge-fill text-warning me-2"></i>Boosts focus and productivity</li>
+            <li><i class="bi bi-droplet-fill text-primary me-2"></i>Supports hydration and daily wellness</li>
+            <li><i class="bi bi-emoji-smile-fill text-info me-2"></i>Crafted for everyday people, not just athletes</li>
+        </ul>
+
+        <div class="text-center mt-5">
+            <a class="btn btn-outline-light rounded-pill px-4 py-2" href="/Home/Products">Explore Our Products</a>
+        </div>
+    </div>
+</section>

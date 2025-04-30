@@ -1,0 +1,76 @@
+@{
+    ViewData["Title"] = "FAQ";
+    Layout = "_Layout";
+}
+
+<section class="py-5 bg-black text-white">
+    <div class="container">
+        <h1 class="display-4 fw-bold mb-4 text-center">Frequently Asked Questions</h1>
+        <div class="accordion" id="faqAccordion">
+
+            <style>
+                .accordion-button::after {
+                    display: none;
+                }
+                .faq-toggle::after {
+                    content: '\f078'; /* down arrow (chevron-down) */
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    float: right;
+                    transition: transform 0.3s ease;
+                    margin-left: auto;
+                }
+                .accordion-button:not(.collapsed).faq-toggle::after {
+                    transform: rotate(-180deg);
+                }
+            </style>
+
+            @for (int i = 1; i <= 10; i++)
+            {
+                var question = i switch
+                {
+                    1 => "How long does shipping take?",
+                    2 => "What is your return policy?",
+                    3 => "Do you ship internationally?",
+                    4 => "Are Klarity drinks vegan and gluten-free?",
+                    5 => "Can I track my order?",
+                    6 => "What payment methods are accepted?",
+                    7 => "Can I change or cancel my order?",
+                    8 => "Is Klarity safe for daily use?",
+                    9 => "Do you offer wholesale pricing?",
+                    10 => "How do subscriptions work?",
+                    _ => ""
+                };
+
+                var answer = i switch
+                {
+                    1 => "Standard shipping takes 3-5 business days. Expedited options are available at checkout.",
+                    2 => "You can return unopened products within 30 days for a full refund.",
+                    3 => "Yes, we ship worldwide. Shipping fees and delivery times vary by location.",
+                    4 => "Yes, all our drinks are vegan, gluten-free, and made with clean ingredients.",
+                    5 => "Yes, you will receive a tracking link via email once your order ships.",
+                    6 => "We accept all major credit cards, PayPal, and Klarna installment payments.",
+                    7 => "Orders can be modified or canceled within 1 hour of placement by contacting support.",
+                    8 => "Yes, Klarity drinks are formulated for daily energy and mental clarity with no crash.",
+                    9 => "Yes! Contact us through the wholesale form for pricing and bulk options.",
+                    10 => "You can subscribe to monthly deliveries and save 15%. Cancel anytime.",
+                    _ => ""
+                };
+
+                    <div class="accordion-item bg-dark text-white border border-secondary mb-3">
+                        <h2 class="accordion-header" id="q@i">
+                            <button class="accordion-button collapsed bg-dark text-white faq-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#a@i">
+                            @question
+                            </button>
+                        </h2>
+                        <div id="a@i" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">@answer</div>
+                        </div>
+                    </div>
+            }
+
+        </div>
+    </div>
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">

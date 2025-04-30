@@ -1,4 +1,4 @@
-using KlarityMVP.Data;
+﻿using KlarityMVP.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,8 +12,12 @@ var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
+    app.UseDeveloperExceptionPage(); // TEMP: enable full errors during publish testing
     app.UseHsts();
+}
+else
+{
+    app.UseDeveloperExceptionPage();
 }
 
 app.UseHttpsRedirection();
@@ -29,7 +33,17 @@ app.MapControllerRoute(
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-    DbInitializer.Seed(db);
+
+    try
+    {
+        db.Database.EnsureDeleted(); 
+        db.Database.EnsureCreated();
+        DbInitializer.Seed(db);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"❌ DB Init Error: {ex.Message}");
+    }
 }
 
 app.Run();

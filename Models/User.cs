@@ -1,15 +1,19 @@
-using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace KlarityMVP.Models
 {
     public class User
     {
         public int Id { get; set; }
-        public string Name     { get; set; } = string.Empty;
-        public string Email    { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
-        public string Role     { get; set; } = string.Empty;
 
-        public ICollection<Purchase> Purchases { get; set; } = new List<Purchase>();
+        [Required]
+        public string FullName { get; set; } = string.Empty;
+
+        [Required]
+        public string Email { get; set; } = string.Empty;
+
+        [Required]
+        public string Password { get; set; } = string.Empty;
     }
+
 }
